@@ -483,58 +483,6 @@ python training_app.py
 python robot/controller.py --config config.yaml
 ```
 
-### Docker Support
-```bash
-cd docker
-docker build -t surveillance-robot .
-docker run -p 8000:8000 surveillance-robot
-```
-
----
-
-## 📁 Project Structure
-
-```
-Surveillance-Robot-Employees-Attendance/
-├── backend/
-│   ├── app.py                    # Main application entry point
-│   ├── recognition_engine.py     # Core recognition logic
-│   ├── embedding_engine.py       # Face detection & embedding extraction
-│   ├── engine_configuration.py   # Configuration management
-│   ├── face_profile.py           # Face data structures
-│   └── camera_config.py          # Camera utilities
-├── interface/
-│   ├── interface.py              # Tkinter GUI
-│   └── assets/                   # GUI assets (icons, etc.)
-├── robot/
-│   ├── controller.py             # Robot communication
-│   ├── robot_code.cpp            # Arduino firmware
-│   └── routes/                   # Route definitions
-├── vision/
-│   ├── esp32_main.cpp            # ESP32-CAM firmware
-│   ├── app_httpd.cpp             # HTTP/MJPEG server
-│   └── models/                   # Pre-trained models
-│       ├── deploy.prototxt       # SSD model architecture
-│       ├── detector_model.caffemodel  # SSD weights
-│       └── openface.t7           # OpenFace model
-├── scripts/
-│   ├── init_db.py                # Database initialization
-│   ├── train_recognition.py      # Model training scripts
-│   └── test_motors.py            # Motor testing utility
-├── training_app.py               # Employee registration utility
-├── config.yaml                   # System configuration
-├── dataset.json                  # Employee database
-├── attendance.log                # Attendance logs
-├── requirements.txt              # Python dependencies
-├── docker/
-│   └── README.md                 # Docker instructions
-└── docs/
-    ├── hardware_setup.md         # Hardware assembly guide
-    └── api_reference.md          # API documentation
-```
-
----
-
 ## 🔮 Future Improvements
 
 ### Advanced Navigation
@@ -608,11 +556,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## 📞 Contact
 
 **Author:** Ahmad Yamen AbdulKader Radwan  
-**Supervisor:** Dr. Eng. Issa Al-Ghannam  
-
-**Institution:** Tishreen University (Latakia University)  
-**Faculty:** Mechanical and Electrical Engineering  
-**Major:** Mechatronics Engineering  
 
 [![GitHub](https://img.shields.io/badge/GitHub-AhmadYamen--Radwan-181717?style=for-the-badge&logo=github)](https://github.com/AhmadYamen-Radwan)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmad.yamen.radwan@example.com)
@@ -627,7 +570,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 [![Star](https://img.shields.io/github/stars/AhmadYamen-Radwan/Surveillance-Robot-Employees-Attendance?style=social)](https://github.com/AhmadYamen-Radwan/Surveillance-Robot-Employees-Attendance)
 [![Forks](https://img.shields.io/github/forks/AhmadYamen-Radwan/Surveillance-Robot-Employees-Attendance?style=social)](https://github.com/AhmadYamen-Radwan/Surveillance-Robot-Employees-Attendance)
 
-*Tishreen University - Mechatronics Engineering Department*  
 *2026*
 
 </div>
